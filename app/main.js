@@ -12,3 +12,5 @@ const prompt = () => {
    prompt();
   });
 };
+
+prompt();

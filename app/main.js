@@ -10,7 +10,7 @@ const prompt = () => {
   rl.question("$ ", (answer) => {
     if(answer.startsWith('echo')){
       const s = answer.split(" ").slice(1).join(" ");
-      console.log(s);
+      console.log(`${s}\n`);
     }else if(answer==="exit 0")process.exit(0);
     else{
       console.log(`${answer}: command not found\n`);

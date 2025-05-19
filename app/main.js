@@ -6,7 +6,9 @@ const rl = readline.createInterface({
 });
 
 // Uncomment this block to pass the first stage
-rl.question("$ ", (answer) => {
-  process.stdout.write(`${answer}: command not found\n`)
-  prompt();
-});
+const prompt = () => {
+  rl.question("$ ", (answer) => {
+    console.log(`${answer}: command not found`);
+   prompt();
+  });
+};
